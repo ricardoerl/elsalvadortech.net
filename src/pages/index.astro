@@ -1,13 +1,16 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Container from "../layouts/Container.astro";
 ---
 
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to elsalvadortech.net </h1>
-	</main>
+  <main>
+    <Header />
+    <Container>
+      <h1>Welcome to elsalvadortech.net</h1>
+    </Container>
+  </main>
 </Layout>
 
-<style>
-
-</style>
+<style></style>
