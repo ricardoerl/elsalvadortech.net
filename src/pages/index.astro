@@ -1,16 +1,24 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header.astro";
 import Container from "../layouts/Container.astro";
+import Header from "../components/Header.astro";
+import Sidebar from "../components/Sidebar.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
     <Header />
     <Container>
-      <h1>Welcome to elsalvadortech.net</h1>
+      <div class="grid grid-cols-5 gap-x-8">
+        <section class="col-span-1 border-r border-gray-200 pr-8">
+          <Sidebar />
+        </section>
+        <section class="col-span-4">
+          <h2 class="text-lg font-bold">Empresas</h2>
+        </section>
+      </div>
     </Container>
   </main>
-</Layout>
 
-<style></style>
+  <style></style>
+</Layout>
